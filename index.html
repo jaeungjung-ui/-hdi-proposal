@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HDI × SSAC SSAC — Cleaning Service Proposal</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --g-deep:   #2B3A1D;
+  --g-mid:    #3C5228;
+  --g-light:  #587040;
+  --g-muted:  #7A9060;
+  --g-pale:   #B8CCAA;
+  --g-faint:  #E6EDD9;
+  --ivory:    #F7F3EC;
+  --ivory-d:  #EDE6D6;
+  --ivory-m:  #E2D9C8;
+  --white:    #FDFCF8;
+  --char:     #1C1E18;
+  --t-mid:    #4A5038;
+  --t-light:  #7A8060;
+  --ph-pink:  #E8A090;
+  --ph-navy:  #2A3050;
+  --gold:     #B89A5A;
+  --gold-l:   #D4B878;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--ivory);color:var(--char);font-size:15px;line-height:1.7;overflow-x:hidden;}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:58px;background:rgba(43,58,29,0.97);backdrop-filter:blur(16px);display:flex;align-items:center;justify-content:space-between;padding:0 52px;border-bottom:1px solid rgba(184,204,170,0.1);}
+.nav-l{display:flex;align-items:center;gap:16px;}
+.nav-logo{height:28px;width:auto;}
+.nav-sep{width:1px;height:20px;background:rgba(184,204,170,0.22);}
+.nav-brand{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:600;color:var(--ivory);letter-spacing:.06em;}
+.nav-brand em{font-style:normal;color:var(--ph-pink);}
+.nav-links{display:flex;gap:30px;list-style:none;}
+.nav-links a{color:rgba(247,243,236,.5);font-size:11px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:color .2s;}
+.nav-links a:hover{color:var(--gold);}
+
+/* ── HERO ── */
+.hero{min-height:100vh;background:var(--g-deep);display:grid;grid-template-columns:1.1fr 0.9fr;padding-top:58px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 65% at 72% 38%,rgba(88,112,64,.2) 0%,transparent 70%),radial-gradient(ellipse 35% 45% at 18% 82%,rgba(60,82,40,.28) 0%,transparent 60%);pointer-events:none;}
+
+.hero-left{padding:80px 56px 80px 80px;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2;}
+
+/* hero badge pill */
+.h-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(184,204,170,.1);border:1px solid rgba(184,204,170,.18);padding:7px 14px;width:fit-content;margin-bottom:32px;}
+.h-pill-dot{width:5px;height:5px;background:var(--ph-pink);border-radius:50%;}
+.h-pill-txt{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(247,243,236,.55);}
+
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(46px,5.5vw,82px);font-weight:300;color:var(--ivory);line-height:1.06;letter-spacing:-.01em;margin-bottom:26px;}
+.hero h1 em{font-style:italic;color:var(--g-pale);}
+.hero-desc{font-size:14px;color:rgba(247,243,236,.48);font-weight:300;line-height:1.9;max-width:380px;margin-bottom:44px;}
+
+.hero-cta{display:flex;gap:14px;align-items:center;}
+.btn-s{background:var(--gold);color:var(--g-deep);padding:13px 28px;font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;transition:all .2s;display:inline-block;}
+.btn-s:hover{background:var(--gold-l);transform:translateY(-1px);}
+.btn-o{color:rgba(247,243,236,.5);font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(247,243,236,.18);padding-bottom:2px;transition:all .2s;}
+.btn-o:hover{color:var(--ivory);border-color:var(--ivory);}
+
+/* hero right — icon-box sticker panel */
+.hero-right{position:relative;z-index:2;border-left:1px solid rgba(184,204,170,.08);display:flex;flex-direction:column;justify-content:center;padding:60px 48px;}
+
+.hero-sticker-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+
+.hsk{background:rgba(255,255,255,.05);border:1px solid rgba(184,204,170,.14);padding:24px 20px;display:flex;flex-direction:column;gap:10px;transition:background .25s;}
+.hsk:hover{background:rgba(255,255,255,.09);}
+.hsk-icon{font-size:22px;line-height:1;}
+.hsk-title{font-size:12px;font-weight:500;color:var(--ivory);letter-spacing:.03em;line-height:1.3;}
+.hsk-desc{font-size:11px;color:rgba(247,243,236,.4);line-height:1.6;font-weight:300;}
+.hsk.accent{background:rgba(88,112,64,.18);border-color:rgba(184,204,170,.28);}
+.hsk.accent .hsk-title{color:var(--g-pale);}
+.hsk.pink{background:rgba(88,112,64,.12);border-color:rgba(184,204,170,.2);}
+.hsk.pink .hsk-title{color:var(--g-pale);}
+
+.hsk-wide{grid-column:span 2;flex-direction:row;align-items:center;gap:16px;}
+
+/* ── SECTION BASE ── */
+section{padding:96px 80px;}
+.sec-label{font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--g-muted);font-weight:500;margin-bottom:12px;}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,3.6vw,52px);font-weight:300;color:var(--g-deep);line-height:1.1;margin-bottom:48px;}
+
+/* ── TAGS ── */
+.tag{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;white-space:nowrap;}
+.tg{background:var(--g-faint);color:var(--g-mid);border:1px solid var(--g-pale);}
+.tgo{background:var(--g-faint);color:var(--g-mid);border:1px solid var(--g-pale);}
+.tgp{background:var(--g-faint);color:var(--g-mid);border:1px solid var(--g-pale);}
+
+/* ── WHAT YOU GET — icon-box strip ── */
+.wyg-strip{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:rgba(184,204,170,0.12);border:1px solid rgba(184,204,170,0.12);margin-bottom:64px;}
+.wyg-box{background:var(--g-deep);padding:28px 20px;display:flex;flex-direction:column;gap:8px;transition:background .2s;}
+.wyg-box:hover{background:rgba(88,112,64,0.35);}
+.wyg-icon{font-size:24px;}
+.wyg-title{font-size:12px;font-weight:500;color:var(--g-deep);line-height:1.3;letter-spacing:.01em;}
+.wyg-sub{font-size:11px;color:var(--t-light);line-height:1.5;font-weight:300;}
+
+/* ── PRICING ── */
+#pricing{background:var(--white);}
+.pricing-hd{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:44px;gap:24px;flex-wrap:wrap;}
+.pricing-tags{display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
+.pricing-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--ivory-m);border:1px solid var(--ivory-m);margin-bottom:20px;}
+.pc{background:var(--white);padding:30px 22px;position:relative;transition:background .2s;}
+.pc:hover{background:var(--ivory);}
+.pc-badge{position:absolute;top:0;left:22px;background:var(--g-light);color:var(--ivory);font-size:9px;letter-spacing:.14em;text-transform:uppercase;padding:3px 8px;font-weight:500;}
+.pc-freq{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--g-muted);margin-bottom:8px;font-weight:500;margin-top:14px;}
+.pc-name{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:400;color:var(--g-deep);margin-bottom:18px;}
+.pc-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--ivory-d);font-size:13px;}
+.pc-row:last-child{border-bottom:none;}
+.pc-lbl{color:var(--t-light);font-weight:300;}
+.pc-val{font-weight:500;color:var(--g-mid);}
+.pricing-note{font-size:12px;color:var(--t-light);line-height:1.8;padding:14px 18px;background:var(--g-faint);border-left:2px solid var(--g-pale);}
+
+/* ── CALCULATOR ── */
+#calculator{background:var(--g-deep);color:var(--ivory);}
+#calculator .sec-label{color:var(--g-pale);}
+#calculator .sec-title{color:var(--ivory);}
+.calc-wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+.calc-f{display:flex;flex-direction:column;gap:8px;margin-bottom:20px;}
+.calc-f label{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--g-pale);font-weight:400;}
+.calc-f select,.calc-f input{background:rgba(255,255,255,.06);border:1px solid rgba(184,204,170,.16);color:var(--ivory);padding:12px 15px;font-size:14px;font-family:'DM Sans',sans-serif;outline:none;transition:border-color .2s;-webkit-appearance:none;}
+.calc-f select:focus,.calc-f input:focus{border-color:var(--gold);}
+.calc-f select option{background:var(--g-deep);}
+.villa-lbl{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--g-pale);margin-bottom:14px;font-weight:400;margin-top:40px;}
+.villa-tbl{width:100%;border-collapse:collapse;font-size:13px;}
+.villa-tbl th{text-align:left;padding:9px 14px;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:rgba(184,204,170,.45);font-weight:400;border-bottom:1px solid rgba(184,204,170,.1);}
+.villa-tbl td{padding:13px 14px;border-bottom:1px solid rgba(184,204,170,.07);color:rgba(247,243,236,.65);font-weight:300;}
+.villa-tbl tr:hover td{color:var(--ivory);background:rgba(255,255,255,.03);}
+.villa-p{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--gold);font-weight:400;}
+.res-box{background:rgba(255,255,255,.05);border:1px solid rgba(184,204,170,.14);padding:40px;position:sticky;top:78px;}
+.res-lbl{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--g-pale);margin-bottom:4px;}
+.res-amt{font-family:'Cormorant Garamond',serif;font-size:76px;font-weight:300;color:var(--gold);line-height:1;margin-bottom:4px;}
+.res-unit{font-size:12px;color:var(--t-light);margin-bottom:28px;}
+.res-rows{border-top:1px solid rgba(184,204,170,.12);padding-top:22px;display:flex;flex-direction:column;gap:11px;}
+.res-row{display:flex;justify-content:space-between;font-size:13px;}
+.rrl{color:rgba(247,243,236,.38);}
+.rrv{color:var(--ivory);font-weight:500;}
+.res-tot{border-top:1px solid rgba(184,204,170,.12);padding-top:14px;margin-top:4px;}
+.res-tot .rrv{color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:20px;}
+
+/* ── PRIVATE VS SHARED ── */
+#pvs{background:var(--ivory);}
+.pvs-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--ivory-m);margin-bottom:0;}
+.pvs-card{background:var(--white);padding:48px 40px;position:relative;overflow:hidden;}
+.pvs-card.dk{background:var(--g-deep);}
+.pvs-vert{position:absolute;left:14px;top:50%;transform:translateY(-50%) rotate(-90deg);font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--g-pale);opacity:.4;white-space:nowrap;}
+.pvs-tag{margin-bottom:14px;}
+.pvs-title{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:300;color:var(--g-deep);margin-bottom:18px;line-height:1.2;}
+.pvs-card.dk .pvs-title{color:var(--ivory);}
+.pvs-body{font-size:13px;color:var(--t-light);line-height:1.85;font-weight:300;}
+.pvs-card.dk .pvs-body{color:rgba(247,243,236,.5);}
+
+/* icon-box list inside pvs */
+.pvs-icons{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:28px;}
+.pvs-ib{background:var(--g-faint);border:1px solid var(--g-light);padding:14px 16px;display:flex;align-items:flex-start;gap:10px;}
+.pvs-card.dk .pvs-ib{background:rgba(255,255,255,.05);border-color:rgba(184,204,170,.15);}
+.pvs-ib-icon{font-size:16px;line-height:1;flex-shrink:0;margin-top:1px;}
+.pvs-ib-text{font-size:12px;color:var(--t-mid);font-weight:400;line-height:1.4;}
+.pvs-card.dk .pvs-ib-text{color:rgba(247,243,236,.6);}
+
+/* photo placeholder */
+.photo-ph{height:180px;margin-top:24px;background:linear-gradient(135deg,var(--g-faint) 0%,var(--ivory-d) 100%);border:1px dashed var(--g-pale);display:flex;align-items:center;justify-content:center;position:relative;}
+.pvs-card.dk .photo-ph{background:rgba(255,255,255,.04);border-color:rgba(184,204,170,.15);}
+.photo-ph-lbl{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--g-pale);opacity:.55;}
+.pvs-card.dk .photo-ph-lbl{color:rgba(184,204,170,.35);}
+.photo-tag{position:absolute;bottom:10px;right:10px;}
+
+/* ── PROCESS ── */
+#process{background:var(--white);}
+.proc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--ivory-m);}
+.step{background:var(--white);padding:34px 26px;transition:background .2s;position:relative;}
+.step:hover{background:var(--ivory);}
+.step-nb{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--g-faint);border:2px solid var(--g-light);font-size:13px;font-weight:500;color:var(--g-mid);margin-bottom:14px;font-family:'Cormorant Garamond',serif;}
+.step-title{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:400;color:var(--g-deep);margin-bottom:10px;line-height:1.3;}
+.step-desc{font-size:13px;color:var(--t-light);line-height:1.72;font-weight:300;}
+
+/* icon-box checklist per step */
+.step-ib{margin-top:14px;display:flex;flex-direction:column;gap:6px;}
+.step-ib-row{display:flex;align-items:flex-start;gap:8px;font-size:12px;color:var(--t-mid);font-weight:300;line-height:1.4;}
+.step-ib-row::before{content:'✓';color:var(--g-light);font-size:11px;flex-shrink:0;margin-top:1px;}
+
+/* ── ADD-ONS ── */
+#services{background:var(--ivory);}
+.addon-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--ivory-m);}
+.addon-panel{background:var(--white);padding:38px;}
+.addon-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;padding-bottom:14px;border-bottom:1px solid var(--ivory-d);}
+.addon-head-title{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--g-muted);font-weight:500;}
+.addon-row{display:flex;justify-content:space-between;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--ivory-d);gap:12px;}
+.addon-row:last-child{border-bottom:none;}
+.addon-name{font-size:13px;color:var(--char);font-weight:400;line-height:1.4;}
+.addon-price{font-family:'Cormorant Garamond',serif;font-size:19px;color:var(--g-mid);white-space:nowrap;font-weight:400;}
+.new-b{display:inline-block;background:var(--g-light);color:var(--ivory);font-size:8px;letter-spacing:.08em;text-transform:uppercase;padding:2px 5px;font-weight:500;margin-left:5px;vertical-align:middle;}
+
+/* ── SCOPE ── */
+#scope{background:var(--g-deep);color:var(--ivory);}
+#scope .sec-label{color:var(--g-pale);}
+#scope .sec-title{color:var(--ivory);}
+.scope-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(184,204,170,.08);margin-bottom:48px;}
+.sc-col{background:rgba(255,255,255,.03);padding:30px 26px;}
+.sc-head{font-size:10px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid;}
+.scope-grid .sc-col:nth-child(1) .sc-head{color:var(--g-pale);border-color:var(--g-pale);}
+.scope-grid .sc-col:nth-child(2) .sc-head{color:var(--gold);border-color:var(--gold);}
+.scope-grid .sc-col:nth-child(3) .sc-head{color:var(--ph-pink);border-color:var(--ph-pink);}
+.sc-item{display:flex;align-items:center;gap:7px;padding:8px 0;font-size:13px;color:rgba(247,243,236,.6);font-weight:300;border-bottom:1px solid rgba(255,255,255,.04);}
+.sc-item:last-child{border-bottom:none;}
+.sc-dot{width:4px;height:4px;border-radius:50%;flex-shrink:0;}
+.scope-grid .sc-col:nth-child(1) .sc-dot{background:var(--g-pale);}
+.scope-grid .sc-col:nth-child(2) .sc-dot{background:var(--gold);}
+.scope-grid .sc-col:nth-child(3) .sc-dot{background:var(--ph-pink);}
+.areas-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:rgba(184,204,170,.07);}
+.ar-col{background:rgba(255,255,255,.03);padding:22px 16px;}
+.ar-title{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--g-pale);font-weight:500;margin-bottom:12px;}
+.ar-item{font-size:12px;color:rgba(247,243,236,.5);font-weight:300;padding:4px 0;border-bottom:1px solid rgba(255,255,255,.04);line-height:1.4;}
+.ar-item:last-child{border-bottom:none;}
+
+/* ── SCHEDULE ── */
+#schedule{background:var(--white);}
+.sched-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--ivory-m);}
+.sched-card{background:var(--white);padding:30px 22px;transition:background .2s;}
+.sched-card:hover{background:var(--ivory);}
+.sched-icon-box{width:40px;height:40px;background:var(--g-faint);border:1.5px solid var(--g-light);display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:14px;}
+.sched-name{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;color:var(--g-deep);margin-bottom:4px;}
+.sched-freq{font-size:11px;color:var(--gold);letter-spacing:.07em;margin-bottom:12px;}
+.sched-desc{font-size:13px;color:var(--t-light);font-weight:300;line-height:1.7;}
+
+/* ── TERMS ── */
+#terms{background:var(--ivory);}
+.terms-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--ivory-m);margin-bottom:36px;}
+.tc{background:var(--white);padding:30px 24px;transition:background .2s;}
+.tc:hover{background:var(--ivory);}
+.tc-icon-box{width:32px;height:32px;background:var(--g-faint);border:1.5px solid var(--g-light);display:flex;align-items:center;justify-content:center;font-size:14px;margin-bottom:12px;}
+.tc-name{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:400;color:var(--g-deep);margin-bottom:8px;}
+.tc-text{font-size:13px;color:var(--t-light);line-height:1.8;font-weight:300;}
+.confirm-bar{background:var(--g-deep);padding:42px 50px;display:flex;justify-content:space-between;align-items:center;gap:36px;}
+.confirm-txt{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;color:var(--ivory);line-height:1.5;max-width:440px;}
+.confirm-txt em{font-style:italic;color:var(--g-pale);}
+
+/* ── FOOTER ── */
+footer{background:var(--char);padding:50px 80px;display:flex;justify-content:space-between;align-items:flex-end;}
+.ft-brand{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;color:var(--ivory);margin-bottom:8px;}
+.ft-brand em{font-style:normal;color:var(--ph-pink);}
+.ft-info{font-size:13px;color:rgba(247,243,236,.35);line-height:2;font-weight:300;}
+.ft-info a{color:rgba(247,243,236,.45);text-decoration:none;}
+.ft-right{text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:10px;}
+.ft-logo{height:32px;opacity:.45;}
+.ft-date{font-size:11px;color:rgba(247,243,236,.2);letter-spacing:.07em;line-height:1.9;}
+
+/* ── Tablet (iPad) ── */
+@media(max-width:1100px){
+  section{padding:68px 36px;}
+  nav{padding:0 28px;}
+  footer{padding:40px 36px;}
+  .hero{grid-template-columns:1fr;}
+  .hero-right{display:none;}
+  .calc-wrap{grid-template-columns:1fr;}
+  .res-box{position:static;}
+  .pricing-grid{grid-template-columns:repeat(2,1fr);}
+  .proc-grid{grid-template-columns:repeat(2,1fr);}
+  .areas-grid{grid-template-columns:repeat(3,1fr);}
+  .sched-grid{grid-template-columns:repeat(2,1fr);}
+  .terms-grid{grid-template-columns:repeat(2,1fr);}
+  .confirm-bar{flex-direction:column;align-items:flex-start;}
+  .nav-links{display:none;}
+  .wyg-strip{grid-template-columns:repeat(3,1fr);}
+  /* touch-friendly inputs */
+  input,select,textarea{font-size:16px !important;}
+}
+
+/* ── Mobile (iPhone & Android) ── */
+@media(max-width:600px){
+  /* Layout */
+  section{padding:48px 18px;}
+  nav{padding:0 18px;height:52px;}
+  .nav-links{display:none;}
+  footer{padding:32px 18px;flex-direction:column;gap:20px;}
+  .ft-right{text-align:left;}
+
+  /* Hero */
+  .hero{padding:80px 18px 44px;gap:28px;}
+  h1{font-size:36px;line-height:1.15;}
+  .hero-desc{font-size:14px;}
+  .hero-cta{flex-direction:column;gap:10px;}
+  .btn-s,.btn-o{width:100%;text-align:center;padding:16px 20px;font-size:12px;}
+
+  /* Benefit strip */
+  .wyg-strip{grid-template-columns:repeat(2,1fr);}
+  .wyg-box{padding:20px 14px;}
+
+  /* Pricing */
+  .pricing-grid{grid-template-columns:1fr 1fr;}
+  .pc{padding:20px 14px;}
+  .pc-price-val{font-size:28px;}
+
+  /* Calculator */
+  .calc-wrap{grid-template-columns:1fr;gap:24px;}
+  .space-row{grid-template-columns:1fr 90px 80px 28px;}
+  .space-row input[type=text],.space-row input[type=number],.space-row select{font-size:16px;padding:12px 10px;}
+  #globalFreq,.calc-f select{font-size:16px;padding:12px 14px;}
+  #addFloorBtn{font-size:13px;padding:14px;}
+  .floor-header{padding:14px 16px;}
+  .res-amt{font-size:44px;}
+  #villa-svg{max-width:100%;}
+
+  /* PVS */
+  .pvs-grid{grid-template-columns:1fr;}
+  .pvs-icons{grid-template-columns:1fr 1fr;}
+
+  /* Process */
+  .proc-grid{grid-template-columns:1fr;}
+  .step{padding:20px 16px;}
+
+  /* Add-ons */
+  .addon-grid{grid-template-columns:1fr;}
+  .addon-panel{padding:20px 16px;}
+  .addon-row{padding:14px 0;font-size:13px;}
+  .addon-name{font-size:13px;}
+
+  /* Schedule & Terms */
+  .sched-grid{grid-template-columns:1fr 1fr;}
+  .terms-grid{grid-template-columns:1fr;}
+  .tc{padding:18px 16px;}
+
+  /* Client form */
+  .form-grid-2{grid-template-columns:1fr !important;}
+  .fi{font-size:16px;padding:14px 12px;}
+  #client-form{padding:24px 18px;}
+
+  /* General text sizes */
+  .sec-title{font-size:26px;}
+  .sec-label{font-size:9px;}
+  input,select,textarea{font-size:16px !important;}
+
+  /* Prevent horizontal scroll */
+  body{overflow-x:hidden;}
+  *{max-width:100%;box-sizing:border-box;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-l">
+    <img src="data:image/png;base64,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" alt="PH" class="nav-logo">
+    <div class="nav-sep"></div>
+    <div class="nav-brand">HDI <em>×</em> SSAC SSAC</div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#calculator">Calculator</a></li>
+    <li><a href="#pvs">Services</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#scope">Scope</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#terms">Terms</a><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="h-pill">
+      <div class="h-pill-dot"></div>
+      <span class="h-pill-txt">Exclusive Partner — Borey Peng Huoth</span>
+    </div>
+    <h1>Clean Space.<br><em>Managed Well.</em></h1>
+    <p class="hero-desc">Professional cleaning for Borey Peng Huoth villa residences. Consistent quality, transparent pricing, zero compromise.</p>
+    <div class="hero-cta">
+      <a href="#calculator" class="btn-s">Calculate My Price</a>
+      <a href="#pricing" class="btn-o">View Rates</a>
+    </div>
+  </div>
+
+  <!-- HERO RIGHT: Icon-box sticker panel -->
+  <div class="hero-right">
+    <div class="hero-sticker-grid">
+      <div class="hsk">
+        <div class="hsk-icon">🧹</div>
+        <div class="hsk-title">6-Step Process</div>
+        <div class="hsk-desc">Planning to final inspection — every visit.</div>
+      </div>
+      <div class="hsk accent">
+        <div class="hsk-icon">📋</div>
+        <div class="hsk-title">Checklist Every Visit</div>
+        <div class="hsk-desc">Same standard. No variation.</div>
+      </div>
+      <div class="hsk pink">
+        <div class="hsk-icon">🔍</div>
+        <div class="hsk-title">Post-Clean Inspection</div>
+        <div class="hsk-desc">Inspector confirms every session.</div>
+      </div>
+      <div class="hsk">
+        <div class="hsk-icon">📅</div>
+        <div class="hsk-title">Fixed Schedule</div>
+        <div class="hsk-desc">Reliable. Adjustable with notice.</div>
+      </div>
+      <div class="hsk accent hsk-wide">
+        <div class="hsk-icon">🏠</div>
+        <div style="display:flex;flex-direction:column;gap:4px;">
+          <div class="hsk-title">Dedicated to Borey Peng Huoth Residents</div>
+          <div class="hsk-desc">Specialists in villa-scale residential cleaning across all PH property types.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU GET strip -->
+<div style="background:var(--g-deep);padding:0 80px 0;">
+  <div class="wyg-strip" style="margin-bottom:0;border-bottom:none;">
+    <div class="wyg-box" style="background:rgba(255,255,255,.04);border-color:rgba(184,204,170,.1);">
+      <div class="wyg-icon">✨</div>
+      <div class="wyg-title" style="color:var(--ivory);">Always Clean</div>
+      <div class="wyg-sub" style="color:rgba(247,243,236,.4);">Always managed</div>
+    </div>
+    <div class="wyg-box" style="background:rgba(255,255,255,.04);border-color:rgba(184,204,170,.1);">
+      <div class="wyg-icon">👥</div>
+      <div class="wyg-title" style="color:var(--ivory);">No Hiring Stress</div>
+      <div class="wyg-sub" style="color:rgba(247,243,236,.4);">We manage the team</div>
+    </div>
+    <div class="wyg-box" style="background:rgba(255,255,255,.04);border-color:rgba(184,204,170,.1);">
+      <div class="wyg-icon">📊</div>
+      <div class="wyg-title" style="color:var(--ivory);">Consistent Quality</div>
+      <div class="wyg-sub" style="color:rgba(247,243,236,.4);">Checklist-based, no difference</div>
+    </div>
+    <div class="wyg-box" style="background:rgba(255,255,255,.04);border-color:rgba(184,204,170,.1);">
+      <div class="wyg-icon">💬</div>
+      <div class="wyg-title" style="color:var(--ivory);">Clean Feedback</div>
+      <div class="wyg-sub" style="color:rgba(247,243,236,.4);">Check. Report. Confirm.</div>
+    </div>
+    <div class="wyg-box" style="background:rgba(255,255,255,.04);border-color:rgba(184,204,170,.1);">
+      <div class="wyg-icon">💵</div>
+      <div class="wyg-title" style="color:var(--ivory);">Stable & Predictable</div>
+      <div class="wyg-sub" style="color:rgba(247,243,236,.4);">Fixed schedule, handled by HDI</div>
+    </div>
+    <div class="wyg-box" style="background:rgba(255,255,255,.04);border-color:rgba(184,204,170,.1);">
+      <div class="wyg-icon">🛋️</div>
+      <div class="wyg-title" style="color:var(--ivory);">Less Stress</div>
+      <div class="wyg-sub" style="color:rgba(247,243,236,.4);">You relax. We manage.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="pricing-hd">
+    <div>
+      <p class="sec-label">Transparent Pricing</p>
+      <h2 class="sec-title" style="margin-bottom:0;">Rates Per sqm / Monthly</h2>
+    </div>
+    <div class="pricing-tags">
+      <span class="tag tg">✓ Private incl. Laundry</span>
+      <span class="tag tgo">✓ Fixed Monthly Rate</span>
+      <span class="tag tgp">✓ On-site Confirmed</span>
+    </div>
+  </div>
+  <div class="pricing-grid">
+    <div class="pc">
+      <div class="pc-freq">1 Visit / Week</div>
+      <div class="pc-name">Once Weekly</div>
+      <div class="pc-row"><span class="pc-lbl">Private</span><span class="pc-val">$0.90 / sqm</span></div>
+      <div class="pc-row"><span class="pc-lbl">Shared</span><span class="pc-val">$0.70 / sqm</span></div>
+    </div>
+    <div class="pc">
+      <div class="pc-badge">Popular</div>
+      <div class="pc-freq">3 Visits / Week</div>
+      <div class="pc-name">Three Weekly</div>
+      <div class="pc-row"><span class="pc-lbl">Private</span><span class="pc-val">$2.40 / sqm</span></div>
+      <div class="pc-row"><span class="pc-lbl">Shared</span><span class="pc-val">$1.90 / sqm</span></div>
+    </div>
+    <div class="pc">
+      <div class="pc-freq">5 Visits / Week</div>
+      <div class="pc-name">Five Weekly</div>
+      <div class="pc-row"><span class="pc-lbl">Private</span><span class="pc-val">$3.80 / sqm</span></div>
+      <div class="pc-row"><span class="pc-lbl">Shared</span><span class="pc-val">$3.00 / sqm</span></div>
+    </div>
+    <div class="pc">
+      <div class="pc-freq">7 Visits / Week</div>
+      <div class="pc-name">Daily</div>
+      <div class="pc-row"><span class="pc-lbl">Private</span><span class="pc-val">$5.00 / sqm</span></div>
+      <div class="pc-row"><span class="pc-lbl">Shared</span><span class="pc-val">$4.00 / sqm</span></div>
+    </div>
+  </div>
+  <div style="margin-top:16px;padding:16px 20px;background:rgba(88,112,64,0.08);border:1px solid rgba(184,204,170,0.18);display:flex;align-items:flex-start;gap:20px;flex-wrap:wrap;">
+  <div>
+    <div style="font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:rgba(184,204,170,0.6);margin-bottom:6px;">Outdoor / External Areas</div>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;">
+      <span style="font-size:13px;color:var(--ivory);">1× / week &nbsp;<strong style="color:var(--g-pale);">$0.35/sqm</strong></span>
+      <span style="font-size:13px;color:var(--ivory);">3× / week &nbsp;<strong style="color:var(--g-pale);">$0.95/sqm</strong></span>
+      <span style="font-size:13px;color:var(--ivory);">5× / week &nbsp;<strong style="color:var(--g-pale);">$1.50/sqm</strong></span>
+      <span style="font-size:13px;color:var(--ivory);">7× / week &nbsp;<strong style="color:var(--g-pale);">$2.00/sqm</strong></span>
+    </div>
+  </div>
+</div>
+<p class="pricing-note">Private space includes laundry area management &nbsp;·&nbsp; Shared space excludes laundry &nbsp;·&nbsp; Outdoor rate = 50% of shared rate &nbsp;·&nbsp; Exact monthly cost confirmed after on-site measurement</p>
+</section>
+
+<!-- CALCULATOR -->
+<section id="calculator">
+  <p class="sec-label">Build Your Estimate</p>
+  <h2 class="sec-title">Custom Price Calculator</h2>
+
+  <div class="calc-wrap">
+    <!-- LEFT: Floor-based zone builder -->
+    <div>
+      <!-- Global frequency -->
+      <div class="calc-f" style="margin-bottom:28px;">
+        <label>Cleaning Frequency (applies to all spaces)</label>
+        <select id="globalFreq" onchange="calcAll()">
+          <option value="1">1 visit / week</option>
+          <option value="3" selected>3 visits / week</option>
+          <option value="5">5 visits / week</option>
+          <option value="7">7 visits / week</option>
+        </select>
+      </div>
+
+      <!-- Rate reference -->
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:32px;">
+        <span id="tag-private" style="display:inline-flex;align-items:center;padding:4px 10px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;background:rgba(255,255,255,.05);color:rgba(247,243,236,.55);border:1px solid rgba(184,204,170,.15);">Private: $2.40/sqm</span>
+        <span id="tag-shared"  style="display:inline-flex;align-items:center;padding:4px 10px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;background:rgba(255,255,255,.05);color:rgba(247,243,236,.55);border:1px solid rgba(184,204,170,.15);">Shared: $1.90/sqm</span>
+        <span id="tag-outdoor" style="display:inline-flex;align-items:center;padding:4px 10px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;background:rgba(255,255,255,.05);color:rgba(247,243,236,.55);border:1px solid rgba(184,204,170,.15);">Outdoor: $0.95/sqm</span>
+      </div>
+
+      <!-- Floor sections -->
+      <div id="floors-container"></div>
+
+      <!-- Add floor button -->
+      <button onclick="addFloor()" id="addFloorBtn" style="margin-top:12px;background:transparent;border:1px dashed rgba(184,204,170,.25);color:rgba(247,243,236,.35);padding:11px 20px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;width:100%;font-family:'DM Sans',sans-serif;transition:all .2s;" onmouseover="this.style.borderColor='rgba(184,204,170,.5)';this.style.color='rgba(247,243,236,.6)';" onmouseout="this.style.borderColor='rgba(184,204,170,.25)';this.style.color='rgba(247,243,236,.35)';">
+        + Add Floor
+      </button>
+
+
+    </div>
+
+    <!-- RIGHT: Result + Villa cross-section visual -->
+    <div style="display:flex;flex-direction:column;gap:24px;">
+
+      <!-- Live total box -->
+      <div class="res-box">
+        <div class="res-lbl">Estimated Monthly Total</div>
+        <div class="res-amt" id="resAmt">$0</div>
+        <div class="res-unit">per month</div>
+        <div class="res-rows" id="res-breakdown">
+          <p style="font-size:12px;color:rgba(247,243,236,.3);padding:12px 0;">Add spaces to see breakdown</p>
+        </div>
+        <div style="margin-top:20px;padding:12px 14px;background:rgba(184,204,170,.07);border-left:2px solid rgba(184,204,170,.18);">
+          <p style="font-size:11px;color:rgba(247,243,236,.35);line-height:1.8;">Rate: <span id="rate-ref">3× / week</span></p>
+        </div>
+      </div>
+
+      <!-- Villa cross-section diagram -->
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(184,204,170,.12);padding:24px;">
+        <p style="font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(184,204,170,.5);margin-bottom:16px;">Space Overview</p>
+        <svg id="villa-svg" viewBox="0 0 320 380" width="100%" style="display:block;"></svg>
+        <p style="font-size:10px;color:rgba(247,243,236,.25);margin-top:12px;text-align:center;letter-spacing:.08em;">Highlighted spaces are included in your estimate</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background:var(--g-deep);">
+  <p class="sec-label">Get Started</p>
+  <h2 class="sec-title">Send Your<br>Enquiry</h2>
+<!-- CLIENT ENQUIRY FORM -->
+  <div id="client-form" style="margin-top:48px;padding:40px;background:rgba(88,112,64,0.1);border:1px solid rgba(184,204,170,0.2);">
+    <p class="sec-label" style="margin-bottom:8px;">Send Your Enquiry</p>
+    <h3 style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:var(--ivory);margin-bottom:32px;">Request a Confirmation</h3>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;" class="form-grid-2">
+      <div class="fi-wrap">
+        <label class="fi-lbl">Full Name *</label>
+        <input type="text" id="f-name" placeholder="Your name" class="fi">
+      </div>
+      <div class="fi-wrap">
+        <label class="fi-lbl">Phone / Telegram</label>
+        <input type="text" id="f-phone" placeholder="+855 or Telegram username" class="fi">
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;" class="form-grid-2">
+      <div class="fi-wrap">
+        <label class="fi-lbl">Email Address</label>
+        <input type="email" id="f-email" placeholder="your@email.com" class="fi">
+      </div>
+      <div class="fi-wrap">
+        <label class="fi-lbl">Villa / Unit</label>
+        <input type="text" id="f-villa" placeholder="e.g. Borey PH Block A, Villa 12" class="fi">
+      </div>
+    </div>
+    <div style="margin-bottom:16px;">
+      <label class="fi-lbl">Selected Services & Notes</label>
+      <textarea id="f-notes" rows="3" placeholder="e.g. 3× weekly, 2F interior + outdoor garden, add-on: AC cleaning" class="fi" style="resize:vertical;"></textarea>
+    </div>
+
+    <!-- Estimated total from calculator (auto-filled) -->
+    <div style="display:flex;align-items:center;gap:12px;padding:14px 18px;background:rgba(88,112,64,0.2);border:1px solid rgba(184,204,170,0.2);margin-bottom:24px;">
+      <span style="font-size:12px;color:rgba(184,204,170,0.7);letter-spacing:.1em;text-transform:uppercase;">Estimated Monthly Total</span>
+      <span id="form-est-total" style="font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--g-pale);">$0</span>
+      <span style="font-size:11px;color:rgba(247,243,236,0.35);">(from calculator)</span>
+    </div>
+
+    <!-- Send buttons -->
+    <div style="display:flex;gap:12px;flex-wrap:wrap;">
+      <button onclick="sendViaTelegram()" class="btn-s" style="display:flex;align-items:center;gap:10px;background:rgba(42,48,80,0.9);border:1px solid rgba(42,48,80,0.8);">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L8.32 13.617l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.828.942z"/></svg>
+        Send via Telegram
+      </button>
+    </div>
+    <p style="font-size:11px;color:rgba(247,243,236,0.3);margin-top:16px;line-height:1.7;">
+      By submitting, you confirm your interest in HDI × SSAC SSAC cleaning services.<br>
+      Our team will contact you within 1 business day.
+    </p>
+  </div>
+</section>
+
+
+<style>
+/* Floor block */
+.floor-block {
+  margin-bottom: 16px;
+  border: 1px solid rgba(184,204,170,.14);
+  background: rgba(255,255,255,.03);
+  animation: fadeIn .25s ease;
+}
+.floor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(184,204,170,.1);
+  cursor: pointer;
+}
+.floor-label {
+  font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(247,243,236,.7);font-weight:500;
+}
+.floor-controls { display:flex;gap:8px;align-items:center; }
+.floor-del {
+  width:28px;height:28px;background:transparent;
+  border:1px solid rgba(184,204,170,.15);
+  color:rgba(247,243,236,.3);font-size:14px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:all .2s;font-family:inherit;
+}
+.floor-del:hover{border-color:rgba(247,243,236,.3);color:rgba(247,243,236,.7);}
+
+.floor-body { padding: 12px 16px; display:flex;flex-direction:column;gap:8px; }
+
+/* Space row within a floor */
+.space-row {
+  display: grid;
+  grid-template-columns: 1fr 110px 100px 28px;
+  gap: 8px;
+  align-items: center;
+  animation: fadeIn .2s ease;
+}
+.space-row input[type=text],
+.space-row input[type=number],
+.space-row select {
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(184,204,170,.13);
+  color:var(--ivory);padding:10px 12px;
+  font-size:13px;font-family:'DM Sans',sans-serif;
+  outline:none;transition:border-color .2s;
+  width:100%;-webkit-appearance:none;
+}
+.space-row input[type=text]::placeholder{color:rgba(247,243,236,.2);}
+.space-row input:focus,.space-row select:focus{border-color:rgba(184,204,170,.5);}
+.space-row select option{background:var(--g-deep);}
+.space-del{width:28px;height:28px;background:transparent;border:1px solid rgba(184,204,170,.1);color:rgba(247,243,236,.25);font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0;}
+.space-del:hover{border-color:rgba(247,243,236,.25);color:rgba(247,243,236,.6);}
+
+.add-space-btn {
+  background:transparent;border:none;
+  color:rgba(247,243,236,.3);font-size:11px;
+  letter-spacing:.1em;text-transform:uppercase;
+  cursor:pointer;padding:6px 0;font-family:'DM Sans',sans-serif;
+  text-align:left;transition:color .2s;
+}
+.add-space-btn:hover{color:rgba(247,243,236,.6);}
+
+/* space col headers */
+.space-col-headers {
+  display:grid;grid-template-columns:1fr 110px 100px 28px;
+  gap:8px;padding:0 0 6px;
+  border-bottom:1px solid rgba(184,204,170,.08);
+  margin-bottom:6px;
+}
+.space-col-headers span {
+  font-size:9px;letter-spacing:.16em;text-transform:uppercase;
+  color:rgba(184,204,170,.35);font-weight:400;
+}
+
+/* breakdown rows */
+.res-floor-group { margin-bottom:8px; }
+.res-floor-name {
+  font-size:10px;letter-spacing:.15em;text-transform:uppercase;
+  color:rgba(184,204,170,.5);padding:8px 0 4px;
+  border-bottom:1px solid rgba(184,204,170,.08);
+  margin-bottom:4px;
+}
+.res-space-row {
+  display:flex;justify-content:space-between;
+  padding:6px 0;font-size:12px;
+  border-bottom:1px solid rgba(255,255,255,.04);
+}
+.res-space-row:last-child{border-bottom:none;}
+.rsn{color:rgba(247,243,236,.6);font-weight:300;}
+.rsa{color:rgba(247,243,236,.8);font-weight:500;}
+.res-grand-total {
+  display:flex;justify-content:space-between;
+  padding:14px 0 4px;
+  border-top:1px solid rgba(184,204,170,.15);
+  margin-top:8px;
+}
+.rgt-lbl{color:rgba(247,243,236,.45);font-size:13px;}
+.rgt-val{color:var(--g-pale);font-family:'Cormorant Garamond',serif;font-size:22px;}
+
+@keyframes fadeIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── Client enquiry form ── */
+.fi-wrap { display: flex; flex-direction: column; gap: 6px; }
+.fi-lbl { font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: rgba(184,204,170,0.6); font-weight: 400; }
+.fi {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(184,204,170,0.18);
+  color: var(--ivory);
+  padding: 13px 15px;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  outline: none;
+  transition: border-color .2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+.fi::placeholder { color: rgba(247,243,236,0.22); }
+.fi:focus { border-color: rgba(184,204,170,0.5); }
+textarea.fi { min-height: 80px; }
+
+/* ── Service accordion expand ── */
+.addon-detail {
+  display: none;
+  padding: 0 16px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .3s ease, padding .3s ease;
+  background: rgba(88,112,64,0.08);
+  border-top: none;
+}
+.addon-detail.open {
+  display: block;
+  padding: 16px 16px 20px;
+  border-top: 1px solid rgba(184,204,170,0.1);
+  border-bottom: 1px solid rgba(184,204,170,0.1);
+  animation: fadeIn .2s ease;
+}
+.addon-detail.open { display: block; }
+.addon-detail-media {
+  width: 100%; aspect-ratio: 16/9;
+  background: rgba(88,112,64,0.12);
+  border: 1px solid rgba(184,204,170,0.1);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 16px; overflow: hidden;
+}
+.addon-detail-media img { width:100%; height:100%; object-fit:cover; }
+.addon-detail-media iframe { width:100%; height:100%; border:none; }
+.addon-detail-media .media-ph {
+  display:flex; flex-direction:column; gap:6px; align-items:center;
+  color:rgba(184,204,170,0.3); font-size:11px; letter-spacing:.1em; text-transform:uppercase;
+}
+.addon-detail-desc { font-size:13px; color:rgba(247,243,236,0.6); line-height:1.8; margin-bottom:12px; }
+.addon-detail-points { display:flex; flex-direction:column; gap:6px; }
+.addon-detail-point { font-size:12px; color:rgba(247,243,236,0.55); display:flex; gap:8px; }
+.addon-detail-point::before { content:"—"; color:rgba(184,204,170,0.4); flex-shrink:0; }
+.addon-row.active { background: rgba(88,112,64,0.14); }
+.addon-row-wrap { display:flex; flex-direction:column; }
+
+/* Clickable service rows/steps */
+.addon-row { cursor: pointer; transition: background .15s; }
+.addon-row:hover { background: rgba(88,112,64,0.12); }
+.step { cursor: pointer; transition: background .15s; }
+.step:hover { background: rgba(255,255,255,0.03); }
+.click-hint { font-size:10px; color:rgba(184,204,170,0.35); letter-spacing:.1em; margin-top:6px; }
+
+@media(max-width:640px) {
+  .form-grid-2 { grid-template-columns: 1fr !important; }
+}
+</style>
+
+
+
+<!-- PRIVATE VS SHARED -->
+<section id="pvs">
+  <p class="sec-label">Service Types</p>
+  <h2 class="sec-title">Private vs Shared</h2>
+  <div class="pvs-grid">
+    <div class="pvs-card">
+      <div class="pvs-vert">Private Space Cleaning</div>
+      <div class="pvs-tag"><span class="tag tg">Private Space</span></div>
+      <div class="pvs-title">Interior &<br>Laundry Included</div>
+      <div class="pvs-body">Full interior cleaning and laundry management. Covers bedrooms, bathrooms, kitchen, and all daily-use areas with the same checklist every visit.</div>
+      <div class="pvs-icons">
+        <div class="pvs-ib"><div class="pvs-ib-icon">🛏️</div><div class="pvs-ib-text">Bedrooms & Living Areas</div></div>
+        <div class="pvs-ib"><div class="pvs-ib-icon">👕</div><div class="pvs-ib-text">Laundry Included</div></div>
+        <div class="pvs-ib"><div class="pvs-ib-icon">🍳</div><div class="pvs-ib-text">Kitchen & Bathrooms</div></div>
+        <div class="pvs-ib"><div class="pvs-ib-icon">✅</div><div class="pvs-ib-text">Same Checklist Every Visit</div></div>
+      </div>
+      <div class="photo-ph">
+        <span class="photo-ph-lbl">Private Space Photo</span>
+        <span class="tag tg photo-tag">Photo Placeholder</span>
+      </div>
+    </div>
+    <div class="pvs-card dk">
+      <div class="pvs-vert">Shared Space Cleaning</div>
+      <div class="pvs-tag"><span class="tag tgo">Shared Space</span></div>
+      <div class="pvs-title">Common Areas<br>Maintained</div>
+      <div class="pvs-body">All shared and communal zones kept consistently clean. No laundry management. Efficient surface maintenance across lobbies, hallways, and common areas.</div>
+      <div class="pvs-icons">
+        <div class="pvs-ib"><div class="pvs-ib-icon">🏛️</div><div class="pvs-ib-text">Lobbies & Hallways</div></div>
+        <div class="pvs-ib"><div class="pvs-ib-icon">🚫</div><div class="pvs-ib-text">No Laundry Required</div></div>
+        <div class="pvs-ib"><div class="pvs-ib-icon">🧽</div><div class="pvs-ib-text">Surface Maintenance</div></div>
+        <div class="pvs-ib"><div class="pvs-ib-icon">📋</div><div class="pvs-ib-text">Regular Management</div></div>
+      </div>
+      <div class="photo-ph">
+        <span class="photo-ph-lbl">Shared Space Photo</span>
+        <span class="tag tgo photo-tag">Photo Placeholder</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <p class="sec-label">How We Work</p>
+  <h2 class="sec-title">Cleaning Process</h2>
+  <div class="proc-grid">
+    <div class="step">
+      <div class="step-nb">1</div>
+      <div class="step-title">Service Planning & Team Assignment</div>
+      <div class="step-desc">Scope reviewed and team assigned before every visit.</div>
+      <div class="step-ib">
+        <div class="step-ib-row">Responsible staff assigned</div>
+        <div class="step-ib-row">Client requests reviewed</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-nb">2</div>
+      <div class="step-title">Preparation & Basic Cleaning</div>
+      <div class="step-desc">Tools prepared, upper surfaces cleared.</div>
+      <div class="step-ib">
+        <div class="step-ib-row">Equipment & materials prepared</div>
+        <div class="step-ib-row">Loose dust removed</div>
+        <div class="step-ib-row">Laundry collected (private)</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-nb">3</div>
+      <div class="step-title">Surface & Main Cleaning</div>
+      <div class="step-desc">All high-contact surfaces cleaned.</div>
+      <div class="step-ib">
+        <div class="step-ib-row">Furniture, switches, handles</div>
+        <div class="step-ib-row">Kitchen & bathroom surfaces</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-nb">4</div>
+      <div class="step-title">Detailed Area Cleaning</div>
+      <div class="step-desc">Deep clean of specific zones.</div>
+      <div class="step-ib">
+        <div class="step-ib-row">Kitchen sink & counters</div>
+        <div class="step-ib-row">Bathroom fixtures</div>
+        <div class="step-ib-row">Area-based wiping</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-nb">5</div>
+      <div class="step-title">Floor Cleaning</div>
+      <div class="step-desc">Complete floor care, top to bottom.</div>
+      <div class="step-ib">
+        <div class="step-ib-row">Full vacuum & mop</div>
+        <div class="step-ib-row">Edges & residual dust</div>
+        <div class="step-ib-row">Moisture check</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-nb">6</div>
+      <div class="step-title">Final Inspection</div>
+      <div class="step-desc">Inspector confirms, notes recorded.</div>
+      <div class="step-ib">
+        <div class="step-ib-row">Overall condition verified</div>
+        <div class="step-ib-row">Work completion confirmed</div>
+        <div class="step-ib-row">Notes for next visit</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADD-ONS -->
+<section id="services">
+  <p class="sec-label">Optional Add-Ons</p>
+  <h2 class="sec-title">Professional<br>Add-On Services</h2>
+  <p class="click-hint" style="margin-bottom:16px;">↗ Tap any service to see details</p>
+  <div class="addon-grid">
+    <div class="addon-panel">
+      <div class="addon-head">
+        <span class="addon-head-title">Machine Cleaning</span>
+        <span class="tag tg">Specialist Team</span>
+      </div>
+      <div class="addon-row" onclick="toggleAddon(this,'ac-indoor')"><span class="addon-name">Air Conditioner — Indoor Unit</span><span class="addon-price">$20 ↗</span></div>
+      <div class="addon-detail" id="detail-ac-indoor"></div>
+      <div class="addon-row" onclick="toggleAddon(this,'ac-ceiling')"><span class="addon-name">Air Conditioner — Ceiling Indoor</span><span class="addon-price">$50 ↗</span></div>
+      <div class="addon-detail" id="detail-ac-ceiling"></div>
+      <div class="addon-row" onclick="toggleAddon(this,'ac-outdoor')"><span class="addon-name">Air Conditioner — Outdoor Unit</span><span class="addon-price">$30 ↗</span></div>
+      <div class="addon-detail" id="detail-ac-outdoor"></div>
+      <div class="addon-row" onclick="toggleAddon(this,'wm-top')"><span class="addon-name">Washing Machine — Top Loading</span><span class="addon-price">$30 ↗</span></div>
+      <div class="addon-detail" id="detail-wm-top"></div>
+      <div class="addon-row" onclick="toggleAddon(this,'wm-front')"><span class="addon-name">Washing Machine — Front Loading</span><span class="addon-price">$100 ↗</span></div>
+      <div class="addon-detail" id="detail-wm-front"></div>
+      <div class="addon-row" onclick="toggleAddon(this,'fan')"><span class="addon-name">Bathroom Ventilation / Fan</span><span class="addon-price">$15 ↗</span></div>
+      <div class="addon-detail" id="detail-fan"></div>
+    </div>
+    <div class="addon-panel">
+      <div class="addon-head">
+        <span class="addon-head-title">Professional Cleaning</span>
+        <span class="tag tgp">Deep Care</span>
+      </div>
+      <div class="addon-row" onclick="toggleAddon(this,'carpet')"><span class="addon-name">Carpet Deep Cleaning (Machine Shampoo)</span><span class="addon-price">$1/sqm ↗</span></div>
+      <div class="addon-detail" id="detail-carpet"></div>
+      <div class="addon-row" onclick="toggleAddon(this,'mattress')"><span class="addon-name">Bedding & Mattress Cleaning</span><span class="addon-price">$10 ↗</span></div>
+      <div class="addon-detail" id="detail-mattress"></div>
+      <div class="addon-row" onclick="toggleAddon(this,'curtain')"><span class="addon-name">Curtain Cleaning</span><span class="addon-price">$1.50/sqm ↗</span></div>
+      <div class="addon-detail" id="detail-curtain"></div>
+      <div class="addon-row" onclick="toggleAddon(this,'fabric')"><span class="addon-name">Fabric Refresh & Odor Elimination</span><span class="addon-price">$1.50/sqm ↗</span></div>
+      <div class="addon-detail" id="detail-fabric"></div>
+      <div class="addon-row" onclick="toggleAddon(this,'steel')"><span class="addon-name">Stainless Steel Rust Removal & Care <span class="new-b">New</span></span><span class="addon-price">$15–25 ↗</span></div>
+      <div class="addon-detail" id="detail-steel"></div>
+      <div class="addon-row" onclick="toggleAddon(this,'grout')"><span class="addon-name">Tile Grout & Joint Deep Clean <span class="new-b">New</span></span><span class="addon-price">$1.50/sqm ↗</span></div>
+      <div class="addon-detail" id="detail-grout"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SCOPE -->
+<section id="scope">
+  <p class="sec-label">Service Boundaries</p>
+  <h2 class="sec-title">What's Included</h2>
+  <div class="scope-grid">
+    <div class="sc-col"><div class="sc-head">Included</div>
+      <div class="sc-item"><span class="sc-dot"></span>General cleaning of all rooms</div>
+      <div class="sc-item"><span class="sc-dot"></span>Waste disposal & recycling</div>
+      <div class="sc-item"><span class="sc-dot"></span>Surface disinfecting</div>
+      <div class="sc-item"><span class="sc-dot"></span>Floor vacuuming & mopping</div>
+    </div>
+    <div class="sc-col"><div class="sc-head">Additional Options</div>
+      <div class="sc-item"><span class="sc-dot"></span>Deep cleaning</div>
+      <div class="sc-item"><span class="sc-dot"></span>Glass & window wash</div>
+      <div class="sc-item"><span class="sc-dot"></span>Upholstery cleaning</div>
+      <div class="sc-item"><span class="sc-dot"></span>High dusting</div>
+    </div>
+    <div class="sc-col"><div class="sc-head">Not Included</div>
+      <div class="sc-item"><span class="sc-dot"></span>Exterior cleaning</div>
+      <div class="sc-item"><span class="sc-dot"></span>Heavy lifting / furniture moving</div>
+      <div class="sc-item"><span class="sc-dot"></span>Pest control / mold remediation</div>
+      <div class="sc-item"><span class="sc-dot"></span>High-risk areas</div>
+    </div>
+  </div>
+  <div class="areas-grid">
+    <div class="ar-col"><div class="ar-title">Living Areas</div><div class="ar-item">Living room</div><div class="ar-item">Bedrooms</div><div class="ar-item">Hallways</div><div class="ar-item">Walls & Ceiling</div></div>
+    <div class="ar-col"><div class="ar-title">Floors</div><div class="ar-item">All floor types</div><div class="ar-item">Baseboards</div><div class="ar-item">Stairs</div><div class="ar-item">Corners & edges</div></div>
+    <div class="ar-col"><div class="ar-title">Kitchen</div><div class="ar-item">Counters</div><div class="ar-item">Sink area</div><div class="ar-item">Cabinets</div><div class="ar-item">Appliances</div></div>
+    <div class="ar-col"><div class="ar-title">Bathroom</div><div class="ar-item">Sink & mirror</div><div class="ar-item">Toilet</div><div class="ar-item">Shower area</div><div class="ar-item">Floor</div></div>
+    <div class="ar-col"><div class="ar-title">Touch Points</div><div class="ar-item">Switches</div><div class="ar-item">Door handles</div><div class="ar-item">Handrails</div><div class="ar-item">Surfaces</div></div>
+    <div class="ar-col"><div class="ar-title">Balcony & Extra</div><div class="ar-item">Floor</div><div class="ar-item">Railing</div><div class="ar-item">Exterior surfaces</div><div class="ar-item">Utility areas</div></div>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section id="schedule">
+  <p class="sec-label">Flexibility</p>
+  <h2 class="sec-title">Schedule Options</h2>
+  <div class="sched-grid">
+    <div class="sched-card">
+      <div class="sched-icon-box">📅</div>
+      <div class="sched-name">Once Weekly</div>
+      <div class="sched-freq">1 Visit / Week</div>
+      <div class="sched-desc">Essential maintenance. Ideal for lightly used spaces or a starter plan.</div>
+    </div>
+    <div class="sched-card">
+      <div class="sched-icon-box">🗓️</div>
+      <div class="sched-name">Three Weekly</div>
+      <div class="sched-freq">3 Visits / Week</div>
+      <div class="sched-desc">Most popular. Consistent cleanliness with a predictable fixed schedule.</div>
+    </div>
+    <div class="sched-card">
+      <div class="sched-icon-box">✨</div>
+      <div class="sched-name">Five Weekly</div>
+      <div class="sched-freq">5 Visits / Week</div>
+      <div class="sched-desc">High-frequency service for actively used villas and family households.</div>
+    </div>
+    <div class="sched-card">
+      <div class="sched-icon-box">🌙</div>
+      <div class="sched-name">Daily</div>
+      <div class="sched-freq">7 Visits / Week</div>
+      <div class="sched-desc">Maximum cleanliness. Ideal for large, high-traffic or luxury villa spaces.</div>
+    </div>
+  </div>
+  <div style="margin-top:20px;padding:18px 24px;background:var(--g-faint);border-left:2px solid var(--g-pale);">
+    <p style="font-size:12px;color:var(--t-light);line-height:1.9;">Final schedule confirmed after inspection and client approval &nbsp;·&nbsp; Changes require prior notice &nbsp;·&nbsp; Urgent services subject to availability</p>
+  </div>
+</section>
+
+<!-- TERMS -->
+<section id="terms">
+  <p class="sec-label">Agreement</p>
+  <h2 class="sec-title">Terms & Conditions</h2>
+  <div class="terms-grid">
+    <div class="tc"><div class="tc-icon-box">✓</div><div class="tc-name">Agreement Validity</div><div class="tc-text">Valid 30 days. Acceptance confirms agreement with scope, conditions, and rates.</div></div>
+    <div class="tc"><div class="tc-icon-box">🏠</div><div class="tc-name">Client Responsibilities</div><div class="tc-text">Clients provide access at scheduled times and secure valuables before service.</div></div>
+    <div class="tc"><div class="tc-icon-box">🧹</div><div class="tc-name">Supplies & Equipment</div><div class="tc-text">All equipment and materials provided. Preferred products accepted subject to availability.</div></div>
+    <div class="tc"><div class="tc-icon-box">⏰</div><div class="tc-name">Cancellation Policy</div><div class="tc-text">24 hours' notice required. Late cancellation may incur a fee.</div></div>
+    <div class="tc"><div class="tc-icon-box">🛡️</div><div class="tc-name">Liability</div><div class="tc-text">Insured for damage caused during service. Pre-existing damage not covered.</div></div>
+    <div class="tc"><div class="tc-icon-box">💳</div><div class="tc-name">Payment Terms</div><div class="tc-text">Invoices due within 14 days. Late payments incur penalty interest.</div></div>
+  </div>
+</section>
+
+
+<!-- VILLA REFERENCE (collapsed) -->
+<div style="background:var(--g-deep);border-top:1px solid rgba(184,204,170,0.1);">
+  <div style="max-width:1200px;margin:0 auto;padding:0 80px;">
+    <button onclick="toggleVillaRef()" id="villa-ref-btn"
+      style="width:100%;display:flex;align-items:center;justify-content:space-between;
+      padding:20px 0;background:transparent;border:none;cursor:pointer;
+      font-family:'DM Sans',sans-serif;color:rgba(184,204,170,0.5);
+      font-size:10px;letter-spacing:.18em;text-transform:uppercase;">
+      <span>Borey Peng Huoth — Villa Type Reference (sqm guide)</span>
+      <span id="villa-ref-arrow" style="font-size:14px;transition:transform .25s;">＋</span>
+    </button>
+    <div id="villa-ref-body" style="display:none;padding-bottom:24px;overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;font-size:12px;">
+        <thead>
+          <tr style="border-bottom:1px solid rgba(184,204,170,0.15);">
+            <th style="text-align:left;padding:8px 12px;color:rgba(184,204,170,0.5);font-weight:400;letter-spacing:.12em;text-transform:uppercase;font-size:10px;">Villa Type</th>
+            <th style="text-align:left;padding:8px 12px;color:rgba(184,204,170,0.5);font-weight:400;letter-spacing:.12em;text-transform:uppercase;font-size:10px;">Area</th>
+            <th style="text-align:left;padding:8px 12px;color:rgba(184,204,170,0.5);font-weight:400;letter-spacing:.12em;text-transform:uppercase;font-size:10px;">Ref. Frequency</th>
+            <th style="text-align:right;padding:8px 12px;color:rgba(184,204,170,0.5);font-weight:400;letter-spacing:.12em;text-transform:uppercase;font-size:10px;">Est. Monthly</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid rgba(184,204,170,0.07);"><td style="padding:10px 12px;color:rgba(247,243,236,0.6);">Type A</td><td style="padding:10px 12px;color:rgba(247,243,236,0.8);">120 sqm</td><td style="padding:10px 12px;color:rgba(247,243,236,0.5);">3× / week</td><td style="padding:10px 12px;text-align:right;color:var(--g-pale);font-family:'Cormorant Garamond',serif;font-size:16px;">$288</td></tr>
+          <tr style="border-bottom:1px solid rgba(184,204,170,0.07);"><td style="padding:10px 12px;color:rgba(247,243,236,0.6);">Type B</td><td style="padding:10px 12px;color:rgba(247,243,236,0.8);">180 sqm</td><td style="padding:10px 12px;color:rgba(247,243,236,0.5);">3× / week</td><td style="padding:10px 12px;text-align:right;color:var(--g-pale);font-family:'Cormorant Garamond',serif;font-size:16px;">$432</td></tr>
+          <tr style="border-bottom:1px solid rgba(184,204,170,0.07);"><td style="padding:10px 12px;color:rgba(247,243,236,0.6);">Type C</td><td style="padding:10px 12px;color:rgba(247,243,236,0.8);">250 sqm</td><td style="padding:10px 12px;color:rgba(247,243,236,0.5);">3× / week</td><td style="padding:10px 12px;text-align:right;color:var(--g-pale);font-family:'Cormorant Garamond',serif;font-size:16px;">$600</td></tr>
+          <tr style="border-bottom:1px solid rgba(184,204,170,0.07);"><td style="padding:10px 12px;color:rgba(247,243,236,0.6);">Type D</td><td style="padding:10px 12px;color:rgba(247,243,236,0.8);">320 sqm</td><td style="padding:10px 12px;color:rgba(247,243,236,0.5);">5× / week</td><td style="padding:10px 12px;text-align:right;color:var(--g-pale);font-family:'Cormorant Garamond',serif;font-size:16px;">$1,216</td></tr>
+          <tr style="border-bottom:1px solid rgba(184,204,170,0.07);"><td style="padding:10px 12px;color:rgba(247,243,236,0.6);">Type E</td><td style="padding:10px 12px;color:rgba(247,243,236,0.8);">420 sqm</td><td style="padding:10px 12px;color:rgba(247,243,236,0.5);">5× / week</td><td style="padding:10px 12px;text-align:right;color:var(--g-pale);font-family:'Cormorant Garamond',serif;font-size:16px;">$1,596</td></tr>
+          <tr><td style="padding:10px 12px;color:rgba(247,243,236,0.6);">Type F</td><td style="padding:10px 12px;color:rgba(247,243,236,0.8);">500 sqm</td><td style="padding:10px 12px;color:rgba(247,243,236,0.5);">5× / week</td><td style="padding:10px 12px;text-align:right;color:var(--g-pale);font-family:'Cormorant Garamond',serif;font-size:16px;">$1,900</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:10px;color:rgba(247,243,236,0.25);margin-top:12px;letter-spacing:.08em;">Reference only · Actual area confirmed on-site · Rates apply to private space at standard frequency</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="ft-brand">HDI <em>×</em> SSAC SSAC</div>
+    <div class="ft-info">
+      <a href="/cdn-cgi/l/email-protection#1852797d6d767f36526d767f58505c51357c7d6b717f7636796a6c"><span class="__cf_email__" data-cfemail="c882a9adbda6afe682bda6af88808c81e5acadbba1afa6e6a9babc">[email&#160;protected]</span></a><br>
+      <a href="https://www.hdicambodia.com" target="_blank">www.hdicambodia.com</a>
+    </div>
+  </div>
+  <div class="ft-right">
+    <img src="data:image/png;base64,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" alt="PH" class="ft-logo">
+    <div class="ft-date">Proposal — January 2026<br>Drafted by NITA-KA</div>
+  </div>
+</footer>
+
+
+<!-- SERVICE DETAIL MODAL (accordion) -->
+<script>
+// ── CONFIG ──────────────────────────────────────────────
+const RATES = {
+  private: {1:.90, 3:2.40, 5:3.80, 7:5.00},
+  shared:  {1:.70, 3:1.90, 5:3.00, 7:4.00},
+  outdoor: {1:.35, 3:.95,  5:1.50, 7:2.00},
+  garden:  {1:.35, 3:.95,  5:1.50, 7:2.00},
+  terrace: {1:.35, 3:.95,  5:1.50, 7:2.00}
+};
+const FLOOR_NAMES = ['Ground Floor (GF)', '1st Floor', '2nd Floor', '3rd Floor'];
+const SPACE_DEFAULTS = {
+  'Ground Floor (GF)': [
+    {name:'Living Room', type:'private'},
+    {name:'Kitchen', type:'private'},
+    {name:'Bathroom (GF)', type:'private'},
+    {name:'Staircase', type:'shared'},
+    {name:'Garden', type:'garden'},
+  ],
+  '1st Floor': [
+    {name:'Bedroom 1', type:'private'},
+    {name:'Bedroom 2', type:'private'},
+    {name:'Bathroom (1F)', type:'private'},
+    {name:'Staircase', type:'shared'},
+    {name:'Terrace', type:'terrace'},
+  ],
+  '2nd Floor': [
+    {name:'Bedroom 3', type:'private'},
+    {name:'Master Bedroom', type:'private'},
+    {name:'Bathroom (2F)', type:'private'},
+    {name:'Staircase', type:'shared'},
+    {name:'Terrace', type:'terrace'},
+  ],
+  '3rd Floor': [
+    {name:'Rooftop / Utility', type:'shared'},
+    {name:'Storage Room', type:'private'},
+  ],
+};
+
+let floorCount = 0;
+let spaceCount = 0;
+
+// ── ADD FLOOR ────────────────────────────────────────────
+function addFloor(customName, defaults) {
+  const container = document.getElementById('floors-container');
+  const totalFloors = container.querySelectorAll('.floor-block').length;
+  if (totalFloors >= 6) return;
+
+  floorCount++;
+  const fid = floorCount;
+  const floorName = customName || FLOOR_NAMES[totalFloors] || ('Floor ' + totalFloors);
+  const spaceDefs = defaults || SPACE_DEFAULTS[floorName] || [
+    {name:'Room 1', type:'private'},
+    {name:'Room 2', type:'private'},
+  ];
+
+  const block = document.createElement('div');
+  block.className = 'floor-block';
+  block.id = 'floor-' + fid;
+  block.innerHTML = '<div class="floor-header"><span class="floor-label">— '+floorName+'</span><div class="floor-controls"><button class="floor-del" onclick="removeFloor('+fid+')">'+'×'+'</button></div></div><div class="floor-body" id="floor-body-'+fid+'"><div class="space-col-headers"><span>Space</span><span>Type</span><span>Area (sqm)</span><span></span></div><div id="spaces-'+fid+'"></div><button class="add-space-btn" onclick="addSpace('+fid+')">+ Add space</button></div>';
+  container.appendChild(block);
+
+  spaceDefs.forEach(s => addSpace(fid, s.name, s.type, ''));
+  updateFloorBtn();
+  calcAll();
+}
+
+function removeFloor(fid) {
+  const el = document.getElementById('floor-' + fid);
+  if (el) { el.style.opacity='0'; el.style.transform='translateY(-4px)'; setTimeout(()=>{ el.remove(); updateFloorBtn(); calcAll(); drawVilla(); }, 200); }
+}
+
+function updateFloorBtn() {
+  const btn = document.getElementById('addFloorBtn');
+  const count = document.getElementById('floors-container').querySelectorAll('.floor-block').length;
+  btn.textContent = count >= 6 ? '✓ Maximum floors reached' : '+ Add Floor (' + count + '/6)';
+}
+
+// ── ADD SPACE ─────────────────────────────────────────────
+function addSpace(fid, name='', type='private', sqm='') {
+  spaceCount++;
+  const sid = spaceCount;
+  const container = document.getElementById('spaces-' + fid);
+  const div = document.createElement('div');
+  div.className = 'space-row';
+  div.id = 'space-' + sid;
+  div.setAttribute('data-floor', fid);
+  div.innerHTML = '<input type="text" placeholder="e.g. Master Bedroom" value="'+name+'" oninput="calcAll()"><select onchange="calcAll()"><option value="private"'+(type==='private'?' selected':'')+'>Private</option><option value="shared"'+(type==='shared'?' selected':'')+'>Shared</option><option value="outdoor"'+(type==='outdoor'?' selected':'')+'>Outdoor</option><option value="terrace"'+(type==='terrace'?' selected':'')+'>Terrace</option><option value="garden"'+(type==='garden'?' selected':'')+'>Garden</option></select><input type="number" placeholder="sqm" min="1" inputmode="numeric" pattern="[0-9]*" value="'+sqm+'" oninput="calcAll()"><button class="space-del" onclick="removeSpace('+sid+')">'+'×'+'</button>';
+  container.appendChild(div);
+  calcAll();
+}
+
+function removeSpace(sid) {
+  const el = document.getElementById('space-' + sid);
+  if (el) { el.style.opacity='0'; setTimeout(()=>{ el.remove(); calcAll(); }, 180); }
+}
+
+// ── CALCULATE ─────────────────────────────────────────────
+function calcAll() {
+  const freq = parseInt(document.getElementById('globalFreq').value);
+  const floors = document.querySelectorAll('.floor-block');
+  let grandTotal = 0;
+  const floorData = [];
+
+  floors.forEach(fb => {
+    const fid = fb.id.replace('floor-','');
+    const floorName = fb.querySelector('.floor-label').textContent.replace('— ','').trim();
+    const spaces = fb.querySelectorAll('.space-row');
+    const spaceData = [];
+    let floorTotal = 0;
+
+    spaces.forEach(row => {
+      const name = row.querySelector('input[type=text]').value || 'Space';
+      const type = row.querySelector('select').value;
+      const sqm  = parseFloat(row.querySelector('input[type=number]').value) || 0;
+      var rateType = (type==='garden'||type==='terrace') ? 'outdoor' : type;
+      const rate = (RATES[rateType] && RATES[rateType][freq]) ? RATES[rateType][freq] : RATES['outdoor'][freq];
+      const amt  = Math.round(sqm * rate);
+      floorTotal += amt;
+      grandTotal += amt;
+      spaceData.push({name, type, sqm, rate, amt});
+    });
+    if (spaceData.length) floorData.push({floorName, spaces: spaceData, floorTotal});
+  });
+
+  // Update total
+  document.getElementById('resAmt').textContent = '$' + grandTotal.toLocaleString();
+
+  // Breakdown
+  const bd = document.getElementById('res-breakdown');
+  if (!floorData.length) {
+    bd.innerHTML = '<p style="font-size:12px;color:rgba(247,243,236,.3);padding:12px 0;">Add spaces to see breakdown</p>';
+  } else {
+    var bdHtml = '';
+    floorData.forEach(function(f) {
+      var spaceRows = '';
+      f.spaces.forEach(function(s) {
+        if (s.sqm > 0) {
+          spaceRows += '<div class="res-space-row">' +
+            '<span class="rsn">' + s.name + ' <span style="opacity:.4;font-size:11px;">' + s.sqm + 'sqm · ' + s.type + '</span></span>' +
+            '<span class="rsa">$' + s.amt.toLocaleString() + '</span>' +
+            '</div>';
+        }
+      });
+      bdHtml += '<div class="res-floor-group"><div class="res-floor-name">' + f.floorName + '</div>' + spaceRows + '</div>';
+    });
+    bdHtml += '<div class="res-grand-total"><span class="rgt-lbl">Monthly Total</span><span class="rgt-val">$' + grandTotal.toLocaleString() + '</span></div>';
+    bd.innerHTML = bdHtml;
+  }
+
+  // Rate tags
+  var rl = {private:'Private: $'+RATES.private[freq].toFixed(2)+'/sqm', shared:'Shared: $'+RATES.shared[freq].toFixed(2)+'/sqm', outdoor:'Outdoor/Garden/Terrace: $'+RATES.outdoor[freq].toFixed(2)+'/sqm'};
+  document.getElementById('tag-private').textContent = rl.private;
+  document.getElementById('tag-shared').textContent  = rl.shared;
+  document.getElementById('tag-outdoor').textContent = rl.outdoor;
+  document.getElementById('rate-ref').textContent = freq + '× / week';
+
+  drawVilla(floorData, freq);
+
+  // sync form total display
+  var resEl = document.getElementById('resAmt');
+  var formEl = document.getElementById('form-est-total');
+  if (resEl && formEl) formEl.textContent = resEl.textContent;
+}
+
+// ── VILLA CROSS-SECTION SVG ────────────────────────────────
+function drawVilla(floorData, freq) {
+  var svg = document.getElementById('villa-svg');
+  if (!svg) return;
+  floorData = floorData || [];
+
+  var W = 340;
+  var lblW = 34;
+  var wallX = lblW + 8;
+  var wallW = 190;
+  var terraceW = 36;
+  var terraceGap = 4;
+  var floorH = 68;
+  var floors = document.querySelectorAll('.floor-block');
+  var nFloors = floors.length || 1;
+  var roofH = 60;
+  var roofBase = roofH + 4;
+  var gardenH = 48;
+  var totalH = roofBase + nFloors * floorH + gardenH + 10;
+
+  svg.setAttribute('viewBox', '0 0 ' + W + ' ' + totalH);
+  var s = '';
+
+  // ── ROOF ───────────────────────────────────────────────
+  var rpts = wallX+','+roofBase+' '+(wallX+wallW/2)+','+(roofH-30)+' '+(wallX+wallW)+','+roofBase;
+  s += '<polygon points="'+rpts+'" fill="rgba(88,112,64,0.15)" stroke="rgba(184,204,170,0.55)" stroke-width="1.5"/>';
+  s += '<line x1="'+(wallX+wallW/2-18)+'" y1="'+(roofH-18)+'" x2="'+(wallX+wallW/2+18)+'" y2="'+(roofH-18)+'" stroke="rgba(184,204,170,0.25)" stroke-width="1"/>';
+
+  // ── FLOORS ─────────────────────────────────────────────
+  var floorArr = Array.from(floors);
+  floorArr.forEach(function(fb, idx) {
+    var fy = roofBase + (nFloors - 1 - idx) * floorH;
+    var floorName = fb.querySelector('.floor-label').textContent.replace('— ','').replace('\u2014 ','').trim();
+    var fData = null;
+    for (var fi=0; fi<floorData.length; fi++) { if (floorData[fi].floorName===floorName) { fData=floorData[fi]; break; } }
+    var hasData = fData && fData.spaces.some(function(sp){ return sp.sqm>0; });
+    var floorTotal = fData ? fData.floorTotal : 0;
+
+    // Floor background
+    var bg = hasData ? 'rgba(88,112,64,0.16)' : 'rgba(88,112,64,0.04)';
+    s += '<rect x="'+wallX+'" y="'+fy+'" width="'+wallW+'" height="'+floorH+'" fill="'+bg+'" stroke="rgba(184,204,170,0.28)" stroke-width="1"/>';
+
+    // Left label band
+    s += '<rect x="0" y="'+fy+'" width="'+lblW+'" height="'+floorH+'" fill="rgba(88,112,64,0.22)"/>';
+    var lbl = floorName.replace('Ground Floor','GF').replace('1st Floor','1F').replace('2nd Floor','2F').replace('3rd Floor','3F').replace(' Floor','F');
+    s += '<text x="'+(lblW/2)+'" y="'+(fy+floorH/2)+'" font-size="9" fill="rgba(184,204,170,0.9)" font-family="DM Sans,sans-serif" font-weight="600" letter-spacing="1.5" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,'+(lblW/2)+','+(fy+floorH/2)+')">' + lbl.toUpperCase() + '</text>';
+
+    // Room dividers & labels
+    if (fData && fData.spaces.length > 0) {
+      var intSpaces = fData.spaces.filter(function(sp){ return sp.type!=='terrace' && sp.type!=='garden'; }).slice(0,4);
+      var terraceSpaces = fData.spaces.filter(function(sp){ return sp.type==='terrace'; });
+
+      if (intSpaces.length > 0) {
+        var roomW = wallW / intSpaces.length;
+        intSpaces.forEach(function(sp, ri) {
+          var rx = wallX + ri * roomW;
+          var hasArea = sp.sqm > 0;
+          var rFill = !hasArea ? 'none' : sp.type==='shared' ? 'rgba(88,112,64,0.12)' : 'rgba(88,112,64,0.22)';
+          if (hasArea) s += '<rect x="'+(rx+1)+'" y="'+(fy+1)+'" width="'+(roomW-2)+'" height="'+(floorH-2)+'" fill="'+rFill+'"/>';
+          if (ri > 0) s += '<line x1="'+rx+'" y1="'+(fy+1)+'" x2="'+rx+'" y2="'+(fy+floorH-1)+'" stroke="rgba(184,204,170,0.18)" stroke-width="1" stroke-dasharray="3,2"/>';
+          var cy = fy + floorH/2;
+          if (hasArea) {
+            var short = sp.name.replace('Master Bedroom','Master').replace('Bedroom','Bed').replace('Bathroom','Bath').replace('Living Room','Living').replace('Staircase','Stairs').replace('Rooftop / Utility','Roof').replace('Storage Room','Store');
+            s += '<text x="'+(rx+roomW/2)+'" y="'+(cy-6)+'" font-size="8" fill="rgba(247,243,236,0.7)" font-family="DM Sans,sans-serif" text-anchor="middle" dominant-baseline="middle">'+short+'</text>';
+            s += '<text x="'+(rx+roomW/2)+'" y="'+(cy+8)+'" font-size="8" fill="rgba(184,204,170,0.85)" font-family="DM Sans,sans-serif" text-anchor="middle" dominant-baseline="middle" font-weight="500">'+sp.sqm+'m\u00b2</text>';
+          } else {
+            s += '<text x="'+(rx+roomW/2)+'" y="'+cy+'" font-size="7.5" fill="rgba(247,243,236,0.18)" font-family="DM Sans,sans-serif" text-anchor="middle" dominant-baseline="middle">'+sp.name.split(' ')[0]+'</text>';
+          }
+        });
+      } else {
+        s += '<text x="'+(wallX+wallW/2)+'" y="'+(fy+floorH/2)+'" font-size="8" fill="rgba(247,243,236,0.15)" font-family="DM Sans,sans-serif" text-anchor="middle" dominant-baseline="middle" letter-spacing="1">ENTER AREAS</text>';
+      }
+
+      // ── TERRACE (right side, protruding) ──────────────
+      if (terraceSpaces.length > 0) {
+        var tx = wallX + wallW + terraceGap;
+        var tTot = terraceSpaces.reduce(function(a,sp){ return a+(sp.sqm||0); }, 0);
+        // Terrace slab
+        s += '<rect x="'+tx+'" y="'+(fy+8)+'" width="'+terraceW+'" height="'+(floorH-8)+'" fill="rgba(184,204,170,0.07)" stroke="rgba(184,204,170,0.35)" stroke-width="1" stroke-dasharray="3,2"/>';
+        // Railing top
+        s += '<line x1="'+tx+'" y1="'+(fy+8)+'" x2="'+(tx+terraceW)+'" y2="'+(fy+8)+'" stroke="rgba(184,204,170,0.5)" stroke-width="2"/>';
+        // Railing posts
+        for (var p=0; p<4; p++) {
+          var px = tx + 4 + p*9;
+          s += '<line x1="'+px+'" y1="'+(fy+8)+'" x2="'+px+'" y2="'+(fy+18)+'" stroke="rgba(184,204,170,0.3)" stroke-width="1"/>';
+        }
+        // Label
+        s += '<text x="'+(tx+terraceW/2)+'" y="'+(fy+floorH/2-4)+'" font-size="7" fill="rgba(184,204,170,0.6)" font-family="DM Sans,sans-serif" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.5">TER</text>';
+        if (tTot > 0) s += '<text x="'+(tx+terraceW/2)+'" y="'+(fy+floorH/2+8)+'" font-size="8" fill="rgba(184,204,170,0.8)" font-family="DM Sans,sans-serif" text-anchor="middle" dominant-baseline="middle">'+tTot+'m\u00b2</text>';
+      } else {
+        // Faint column placeholder aligns with upper terrace
+        var txp = wallX + wallW + terraceGap;
+        s += '<rect x="'+txp+'" y="'+fy+'" width="'+terraceW+'" height="'+floorH+'" fill="rgba(88,112,64,0.03)" stroke="rgba(184,204,170,0.08)" stroke-width="1"/>';
+      }
+
+      // Floor subtotal chip
+      if (floorTotal > 0) {
+        var chipW=46, chipH=15;
+        var cx2=wallX+wallW-chipW-2, cy3=fy+floorH-chipH-2;
+        s += '<rect x="'+cx2+'" y="'+cy3+'" width="'+chipW+'" height="'+chipH+'" fill="rgba(88,112,64,0.55)" rx="2"/>';
+        s += '<text x="'+(cx2+chipW/2)+'" y="'+(cy3+chipH/2+1)+'" font-size="9" fill="rgba(184,204,170,1)" font-family="Cormorant Garamond,serif" text-anchor="middle" dominant-baseline="middle">$'+floorTotal.toLocaleString()+'</text>';
+      }
+    } else {
+      s += '<text x="'+(wallX+wallW/2)+'" y="'+(fy+floorH/2)+'" font-size="8" fill="rgba(247,243,236,0.15)" font-family="DM Sans,sans-serif" text-anchor="middle" dominant-baseline="middle" letter-spacing="1">ENTER AREAS</text>';
+      // Always fill terrace column even when no floor data
+      var txe = wallX + wallW + terraceGap;
+      s += '<rect x="'+txe+'" y="'+fy+'" width="'+terraceW+'" height="'+floorH+'" fill="rgba(88,112,64,0.03)" stroke="rgba(184,204,170,0.08)" stroke-width="1"/>';
+    }
+
+    // Windows (upper floors)
+    if (idx > 0) {
+      var wy = fy + 14;
+      s += '<rect x="'+(wallX+wallW/2-22)+'" y="'+wy+'" width="12" height="10" fill="none" stroke="rgba(184,204,170,0.18)" stroke-width="1"/>';
+      s += '<rect x="'+(wallX+wallW/2+10)+'" y="'+wy+'" width="12" height="10" fill="none" stroke="rgba(184,204,170,0.18)" stroke-width="1"/>';
+    }
+  });
+
+  // ── DOOR on GF ─────────────────────────────────────────
+  var gfY = roofBase + (nFloors-1)*floorH;
+  var dw=18, dh=26;
+  var dx = wallX + wallW/2 - dw/2;
+  s += '<rect x="'+dx+'" y="'+(gfY+floorH-dh)+'" width="'+dw+'" height="'+dh+'" fill="rgba(88,112,64,0.25)" stroke="rgba(184,204,170,0.4)" stroke-width="1"/>';
+  s += '<circle cx="'+(dx+dw-4)+'" cy="'+(gfY+floorH-dh/2)+'" r="1.5" fill="rgba(184,204,170,0.6)"/>';
+
+  // ── GROUND LINE ────────────────────────────────────────
+  var groundY = roofBase + nFloors * floorH;
+  s += '<line x1="0" y1="'+groundY+'" x2="'+W+'" y2="'+groundY+'" stroke="rgba(184,204,170,0.35)" stroke-width="1.5"/>';
+
+  // ── GF LABEL band into garden ────────────────────────
+  s += '<rect x="0" y="'+groundY+'" width="'+lblW+'" height="'+gardenH+'" fill="rgba(88,112,64,0.15)"/>';
+  s += '<text x="'+(lblW/2)+'" y="'+(groundY+gardenH/2)+'" font-size="9" fill="rgba(184,204,170,0.5)" font-family="DM Sans,sans-serif" font-weight="600" letter-spacing="1.5" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,'+(lblW/2)+','+(groundY+gardenH/2)+')">GDN</text>';
+
+  // ── GARDEN (below GF, full width of building) ──────────
+  var gardenSpaces = [];
+  floorData.forEach(function(f){ f.spaces.forEach(function(sp){ if(sp.type==='garden' && sp.sqm>0) gardenSpaces.push(sp); }); });
+  var gy = groundY;
+  var gardenTot = gardenSpaces.reduce(function(a,sp){ return a+(sp.sqm||0); }, 0);
+
+  // Grass base
+  s += '<rect x="'+wallX+'" y="'+gy+'" width="'+wallW+'" height="'+gardenH+'" fill="rgba(43,58,29,0.4)" stroke="rgba(88,112,64,0.3)" stroke-width="1" stroke-dasharray="4,3"/>';
+
+  // Grass blades
+  for (var gi=0; gi<12; gi++) {
+    var gx = wallX + 8 + gi * 15;
+    s += '<line x1="'+gx+'" y1="'+(gy+gardenH)+'" x2="'+(gx-3)+'" y2="'+(gy+gardenH-10)+'" stroke="rgba(88,112,64,0.6)" stroke-width="1.5"/>';
+    s += '<line x1="'+(gx+3)+'" y1="'+(gy+gardenH)+'" x2="'+(gx+6)+'" y2="'+(gy+gardenH-8)+'" stroke="rgba(88,112,64,0.4)" stroke-width="1"/>';
+  }
+
+  // Trees (2 decorative circles)
+  var treePositions = [wallX+28, wallX+wallW-28];
+  treePositions.forEach(function(tx2) {
+    s += '<circle cx="'+tx2+'" cy="'+(gy+14)+'" r="11" fill="rgba(88,112,64,0.35)" stroke="rgba(184,204,170,0.2)" stroke-width="1"/>';
+    s += '<circle cx="'+tx2+'" cy="'+(gy+14)+'" r="7" fill="rgba(88,112,64,0.2)"/>';
+    s += '<line x1="'+tx2+'" y1="'+(gy+22)+'" x2="'+tx2+'" y2="'+(gy+gardenH)+'" stroke="rgba(88,112,64,0.4)" stroke-width="2"/>';
+  });
+
+  // Garden label & sqm
+  if (gardenTot > 0) {
+    s += '<text x="'+(wallX+wallW/2)+'" y="'+(gy+gardenH/2-4)+'" font-size="8" fill="rgba(184,204,170,0.6)" font-family="DM Sans,sans-serif" text-anchor="middle" dominant-baseline="middle" letter-spacing="1">GARDEN</text>';
+    s += '<text x="'+(wallX+wallW/2)+'" y="'+(gy+gardenH/2+8)+'" font-size="9" fill="rgba(184,204,170,0.8)" font-family="Cormorant Garamond,serif" text-anchor="middle" dominant-baseline="middle">'+gardenTot+'m\u00b2</text>';
+  } else {
+    s += '<text x="'+(wallX+wallW/2)+'" y="'+(gy+gardenH/2)+'" font-size="7.5" fill="rgba(184,204,170,0.25)" font-family="DM Sans,sans-serif" text-anchor="middle" dominant-baseline="middle" letter-spacing="1">GARDEN</text>';
+  }
+
+  // Ground hatch marks
+  for (var hi=0; hi<14; hi++) {
+    s += '<line x1="'+(hi*22)+'" y1="'+(groundY)+'" x2="'+(hi*22+5)+'" y2="'+(groundY+6)+'" stroke="rgba(88,112,64,0.3)" stroke-width="1"/>';
+  }
+
+  svg.innerHTML = s;
+}
+
+// ── INIT ──────────────────────────────────────────────────
+addFloor(FLOOR_NAMES[0], SPACE_DEFAULTS[FLOOR_NAMES[0]]);
+addFloor(FLOOR_NAMES[1], SPACE_DEFAULTS[FLOOR_NAMES[1]]);
+addFloor(FLOOR_NAMES[2], SPACE_DEFAULTS[FLOOR_NAMES[2]]);
+updateFloorBtn();
+calcAll();
+
+// ── SERVICE DATA ─────────────────────────────────────────
+const SVC = {
+  'ac-indoor':  { tag:'Machine Cleaning · Specialist Team', title:'Air Conditioner — Indoor Unit', price:'$20 per unit', desc:'Full disassembly and deep cleaning of indoor AC unit. Removes dust, mold, and bacteria from filters, coils, and drainage. Improves cooling efficiency and air quality.', points:['Filter removal and deep wash','Evaporator coil cleaning','Drainage pipe flush','Reassembly and function test'], media:null, youtube:null },
+  'ac-ceiling': { tag:'Machine Cleaning · Specialist Team', title:'Air Conditioner — Ceiling Cassette', price:'$50 per unit', desc:'Specialist cleaning for ceiling-mounted cassette AC units. Full panel removal, coil and drain cleaning, tested before reinstallation.', points:['Panel removal and cleaning','Coil deep wash','Drainage check and flush','Reinstallation and test run'], media:null, youtube:null },
+  'ac-outdoor': { tag:'Machine Cleaning · Specialist Team', title:'Air Conditioner — Outdoor Unit', price:'$30 per unit', desc:'High-pressure cleaning of outdoor condenser unit. Removes debris, dust buildup and improves heat dissipation to extend compressor lifespan.', points:['High-pressure water rinse','Fin comb straightening','Debris and blockage removal','Post-clean inspection'], media:null, youtube:null },
+  'wm-top':     { tag:'Machine Cleaning · Specialist Team', title:'Washing Machine — Top Loading', price:'$30 per unit', desc:'Complete drum and tub cleaning using specialist solution. Removes limescale, mold, and detergent residue for fresher, cleaner laundry.', points:['Drum and tub deep clean','Filter and lint trap cleaning','Control panel wipe-down','Deodorizing treatment'], media:null, youtube:null },
+  'wm-front':   { tag:'Machine Cleaning · Specialist Team', title:'Washing Machine — Front Loading', price:'$100 per unit', desc:'Full disassembly service for front-load machines. Drum, seal, filter, and detergent drawer all cleaned. Eliminates hidden mold around door seal.', points:['Door seal mold removal','Drum removal and deep clean','Pump filter and drain cleaning','Full reassembly and test cycle'], media:null, youtube:null },
+  'fan':        { tag:'Machine Cleaning · Specialist Team', title:'Bathroom Ventilation / Fan', price:'$15 per unit', desc:'Removal and cleaning of bathroom exhaust fans and ventilation covers. Reduces noise and improves airflow and moisture extraction.', points:['Cover and grille removal','Blade and motor cleaning','Duct opening cleared','Reinstallation and airflow check'], media:null, youtube:null },
+  'carpet':     { tag:'Professional Cleaning · Deep Care', title:'Carpet Deep Cleaning', price:'$1 per sqm', desc:'Machine shampoo cleaning for carpets of all sizes. Hot water extraction method removes deep-seated dirt, stains, allergens, and odors.', points:['Pre-treatment spray','Hot water extraction machine','Spot stain treatment','Drying time: 2–4 hours'], media:null, youtube:null },
+  'mattress':   { tag:'Professional Cleaning · Deep Care', title:'Bedding & Mattress Cleaning', price:'$10 per mattress', desc:'UV and suction treatment to remove dust mites, dead skin cells, and allergens from mattresses. Includes deodorizing spray.', points:['UV sterilization treatment','High-power suction extraction','Anti-allergen spray','Deodorizing finish'], media:null, youtube:null },
+  'curtain':    { tag:'Professional Cleaning · Deep Care', title:'Curtain Cleaning', price:'$1.50 per sqm', desc:'On-site curtain cleaning without removal. Specialist steam and dry-cleaning method safe for all fabric types including sheer, velvet, and blackout.', points:['On-site steam cleaning','No removal required','Safe for all fabric types','Deodorizing included'], media:null, youtube:null },
+  'fabric':     { tag:'Professional Cleaning · Deep Care', title:'Fabric Refresh & Odor Elimination', price:'$1.50 per sqm', desc:'Deep fabric refresh for sofas, armchairs, and upholstered furniture. Neutralizes odors and removes surface soiling.', points:['Upholstery vacuum treatment','Enzyme-based odor neutralizer','Fabric-safe cleaning solution','Air-dry finish'], media:null, youtube:null },
+  'steel':      { tag:'Professional Cleaning · New Service', title:'Stainless Steel Rust Removal & Care', price:'$15 – $25', desc:"Specialist treatment for rust spots and oxidation on stainless steel surfaces. Essential in Cambodia's humid climate. Includes protective coating application.", points:['Rust spot chemical treatment','Surface polishing','Protective anti-rust coating','Kitchen and bathroom fixtures'], media:null, youtube:null },
+  'grout':      { tag:'Professional Cleaning · New Service', title:'Tile Grout & Joint Deep Clean', price:'$1.50 per sqm', desc:'High-pressure steam and chemical treatment of tile grout lines. Removes black mold, mildew, and deep-seated grime from bathroom and kitchen tiles.', points:['Steam injection treatment','Mold and mildew removal','Grout whitening result','Sealant application available'], media:null, youtube:null }
+};
+
+// ── ACCORDION ─────────────────────────────────────────────
+function buildDetailHTML(d) {
+  const media = d.youtube
+    ? ('<div class="addon-detail-media"><iframe src="https://www.youtube.com/embed/' + (d.youtube.includes('watch?v=') ? d.youtube.split('watch?v=')[1].split('&')[0] : d.youtube.split('/').pop()) + '" allowfullscreen></iframe></div>')
+    : d.media
+      ? ('<div class="addon-detail-media"><img src="' + d.media + '" alt="' + d.title + '"></div>')
+      : '<div class="addon-detail-media"><div class="media-ph"><span style="font-size:28px">📷</span><span>Photo / Video Coming Soon</span></div></div>';
+  return media +
+    '<div class="addon-detail-desc">' + d.desc + '</div>' +
+    '<div class="addon-detail-points">' + d.points.map(function(p){ return '<div class="addon-detail-point">' + p + '</div>'; }).join('') + '</div>';
+}
+
+function toggleAddon(row, id) {
+  const d = SVC[id]; if (!d) return;
+  const detail = document.getElementById('detail-' + id);
+  if (!detail) return;
+  const isOpen = detail.classList.contains('open');
+  document.querySelectorAll('.addon-detail.open').forEach(function(el){ el.classList.remove('open'); });
+  document.querySelectorAll('.addon-row.active').forEach(function(el){ el.classList.remove('active'); });
+  if (!isOpen) {
+    if (!detail.innerHTML.trim()) detail.innerHTML = buildDetailHTML(d);
+    detail.classList.add('open');
+    row.classList.add('active');
+    setTimeout(function(){ detail.scrollIntoView({behavior:'smooth', block:'nearest'}); }, 80);
+  }
+}
+
+// ── TELEGRAM FORM ─────────────────────────────────────────
+const TG_USERNAME = 'teynihg56';
+
+function getFormData() {
+  return {
+    name:  document.getElementById('f-name')  ? document.getElementById('f-name').value  : '',
+    phone: document.getElementById('f-phone') ? document.getElementById('f-phone').value : '',
+    email: document.getElementById('f-email') ? document.getElementById('f-email').value : '',
+    villa: document.getElementById('f-villa') ? document.getElementById('f-villa').value : '',
+    notes: document.getElementById('f-notes') ? document.getElementById('f-notes').value : '',
+    total: document.getElementById('resAmt')  ? document.getElementById('resAmt').textContent : '$0'
+  };
+}
+
+function buildMessage(d) {
+  return [
+    'HDI × SSAC SSAC — Service Enquiry',
+    '',
+    'Name: ' + (d.name || '—'),
+    'Phone/Telegram: ' + (d.phone || '—'),
+    'Email: ' + (d.email || '—'),
+    'Villa/Unit: ' + (d.villa || '—'),
+    '',
+    'Estimated Monthly Total: ' + d.total,
+    '',
+    'Services & Notes:',
+    d.notes || '—',
+    '',
+    'Sent via HDI Proposal'
+  ].join('\n');
+}
+
+function sendViaTelegram() {
+  const d = getFormData();
+  if (!d.name) { alert('Please enter your name.'); return; }
+  const msg = encodeURIComponent(buildMessage(d));
+  window.open('https://t.me/' + TG_USERNAME + '?text=' + msg, '_blank');
+}
+
+
+
+function toggleVillaRef() {
+  var body = document.getElementById('villa-ref-body');
+  var arrow = document.getElementById('villa-ref-arrow');
+  if (!body) return;
+  var isOpen = body.style.display !== 'none';
+  body.style.display = isOpen ? 'none' : 'block';
+  arrow.textContent = isOpen ? '＋' : '－';
+}
+
+</script>
+</body>
+</html>
